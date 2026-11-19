@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WRLD OF DATA | Affordable Data Deals</title>
+  <meta name="description" content="Buy affordable MTN, Vodacom and eSIM data packages. Order directly through WhatsApp.">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>WRLD <span>OF DATA</span></h1>
+  <p>Your Network. Your Data. Your Connection.</p>
+</header>
+
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#esim">eSIM</a>
+  <a href="#mtn">MTN</a>
+  <a href="#vodacom">Vodacom</a>
+  <a href="#order">Order Now</a>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="tag">FAST • EASY • RELIABLE</span>
+    <h2>WELCOME TO<br>WRLD OF DATA</h2>
+    <p>
+      Affordable data packages at amazing prices.
+      Choose your network, select your package
+      and order directly through WhatsApp.
+    </p>
+    <a href="#order" class="main-btn">SHOP DATA NOW</a>
+  </div>
+</section>
+
+<!-- ESIM -->
+<section class="section" id="esim">
+  <div class="section-heading">
+    <span>01 / ESIM</span>
+    <h2>eSIM DATA DEALS</h2>
+    <p>For compatible eSIM smartphones</p>
+  </div>
+
+  <div class="packages">
+
+    <article class="package-card">
+      <div class="package-icon">📱</div>
+      <h3>100GB eSIM</h3>
+      <p>Instant activation</p>
+      <h2>R350</h2>
+      <button onclick="choosePackage('eSIM','100GB')">
+        ORDER NOW
+      </button>
+    </article>
+
+    <article class="package-card">
+      <div class="package-icon">📱</div>
+      <h3>60GB eSIM</h3>
+      <p>Instant activation</p>
+      <h2>R200</h2>
+      <button onclick="choosePackage('eSIM','60GB')">
+        ORDER NOW
+      </button>
+    </article>
+
+    <article class="package-card">
+      <div class="package-icon">📱</div>
+      <h3>40GB eSIM</h3>
+      <p>Instant activation</p>
+      <h2>R150</h2>
+      <button onclick="choosePackage('eSIM','40GB')">
+        ORDER NOW
+      </button>
+    </article>
+
+    <article class="package-card">
+      <div class="package-icon">📱</div>
+      <h3>20GB eSIM</h3>
+      <p>Instant activation</p>
+      <h2>R100</h2>
+      <button onclick="choosePackage('eSIM','20GB')">
+        ORDER NOW
+      </button>
+    </article>
+
+    <article class="package-card">
+      <div class="package-icon">📱</div>
+      <h3>10GB eSIM</h3>
+      <p>Instant activation</p>
+      <h2>R50</h2>
+      <button onclick="choosePackage('eSIM','10GB')">
+        ORDER NOW
+      </button>
+    </article>
+
+  </div>
+
+  <div class="compatibility">
+    <h3>📱 eSIM COMPATIBLE PHONES</h3>
+    <ul>
+      <li>iPhone XR to iPhone 17</li>
+      <li>Samsung A36 – Latest</li>
+      <li>Huawei P40 – Latest</li>
+    </ul>
+    <p>And many more compatible devices.</p>
+  </div>
+</section>
+
+<!-- MTN -->
+<section class="section" id="mtn">
+  <div class="section-heading">
+    <span>02 / MTN</span>
+    <h2>MTN DATA DEALS</h2>
+    <p>Data valid for 30 days</p>
+  </div>
+
+  <div class="packages">
+
+    <article class="package-card mtn-card">
+      <h3>20GB MTN</h3>
+      <p>30 days validity</p>
+      <h2>R160</h2>
+      <button onclick="choosePackage('MTN','20GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card mtn-card">
+      <h3>10GB MTN</h3>
+      <p>30 days validity</p>
+      <h2>R85</h2>
+      <button onclick="choosePackage('MTN','10GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card mtn-card">
+      <h3>5GB MTN</h3>
+      <p>30 days validity</p>
+      <h2>R55</h2>
+      <button onclick="choosePackage('MTN','5GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card mtn-card">
+      <h3>3GB MTN</h3>
+      <p>30 days validity</p>
+      <h2>R40</h2>
+      <button onclick="choosePackage('MTN','3GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card mtn-card">
+      <h3>1GB MTN</h3>
+      <p>30 days validity</p>
+      <h2>R15</h2>
+      <button onclick="choosePackage('MTN','1GB')">ORDER NOW</button>
+    </article>
+
+  </div>
+</section>
+
+<!-- VODACOM -->
+<section class="section" id="vodacom">
+  <div class="section-heading">
+    <span>03 / VODACOM</span>
+    <h2>VODACOM DATA DEALS</h2>
+    <p>Data valid for 28 days</p>
+  </div>
+
+  <div class="packages">
+
+    <article class="package-card voda-card">
+      <h3>15GB VODACOM</h3>
+      <p>7.5GB anytime + 7.5GB night</p>
+      <h2>R150</h2>
+      <button onclick="choosePackage('Vodacom','15GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card voda-card">
+      <h3>20GB VODACOM</h3>
+      <p>10GB anytime + 10GB night</p>
+      <h2>R200</h2>
+      <button onclick="choosePackage('Vodacom','20GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card voda-card">
+      <h3>30GB VODACOM</h3>
+      <p>15GB anytime + 15GB night</p>
+      <h2>R220</h2>
+      <button onclick="choosePackage('Vodacom','30GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card voda-card">
+      <h3>60GB VODACOM</h3>
+      <p>30GB anytime + 30GB night</p>
+      <h2>R300</h2>
+      <button onclick="choosePackage('Vodacom','60GB')">ORDER NOW</button>
+    </article>
+
+    <article class="package-card voda-card">
+      <h3>150GB VODACOM</h3>
+      <p>75GB anytime + 75GB night</p>
+      <h2>R450</h2>
+      <button onclick="choosePackage('Vodacom','150GB')">ORDER NOW</button>
+    </article>
+
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="section order-section" id="order">
+
+  <div class="section-heading">
+    <span>04 / PLACE YOUR ORDER</span>
+    <h2>ORDER YOUR DATA</h2>
+    <p>Complete your details below to order through WhatsApp.</p>
+  </div>
+
+  <form id="orderForm">
+
+    <label for="customer">Full Name</label>
+    <input
+      type="text"
+      id="customer"
+      placeholder="Enter your full name"
+      required
+    >
+
+    <label for="service">Which service do you want?</label>
+    <select id="service" required>
+      <option value="">Select service</option>
+      <option value="eSIM">eSIM Data</option>
+      <option value="MTN">MTN Data</option>
+      <option value="Vodacom">Vodacom Data</option>
+    </select>
+
+    <label for="package">Choose your data package</label>
+    <select id="package" required>
+      <option value="">Select package</option>
+    </select>
+
+    <div id="numberField" class="hidden">
+      <label for="recipient">
+        Which number should receive the data?
+      </label>
+      <input
+        type="tel"
+        id="recipient"
+        placeholder="Enter cellphone number"
+      >
+    </div>
+
+    <div id="phoneField" class="hidden">
+      <label for="phoneModel">
+        Which phone are you using?
+      </label>
+      <input
+        type="text"
+        id="phoneModel"
+        placeholder="Example: iPhone 13 or Samsung S24"
+      >
+      <p class="help-text">
+        Please make sure your phone supports eSIM.
+      </p>
+    </div>
+
+    <label for="payment">Choose payment method</label>
+    <select id="payment" required>
+      <option value="">Select payment method</option>
+      <option value="Capitec payment">Pay via Capitec</option>
+      <option value="Pay in person">Pay in person</option>
+    </select>
+
+    <div id="paymentInfo" class="payment-info hidden"></div>
+
+    <div id="proofField" class="hidden">
+      <label for="proof">Upload proof of payment</label>
+      <input
+        type="file"
+        id="proof"
+        accept="image/*,.pdf"
+      >
+      <p class="help-text">
+        After WhatsApp opens, attach the proof of payment
+        manually before sending your order.
+      </p>
+    </div>
+
+    <button type="submit" class="submit-btn">
+      SEND ORDER VIA WHATSAPP
+    </button>
+
+  </form>
+</section>
+
+<footer>
+  <h2>WRLD <span>OF DATA</span></h2>
+  <p>Fast • Easy • Reliable</p>
+  <p>WhatsApp: 079 177 0119</p>
+
+  <a
+    href="https://wa.me/27791770119"
+    class="whatsapp-btn"
+    target="_blank"
+  >
+    CHAT WITH US
+  </a>
+
+  <p class="copyright">
+    © 2026 WRLD OF DATA. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>
