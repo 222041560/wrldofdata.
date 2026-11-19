@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fb;
+  color: #10213e;
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  padding: 30px 15px;
+  background: #07152f;
+  color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.header h1 span,
+footer h2 span {
+  color: #ffc12e;
+}
+
+.header p {
+  color: #dce8ff;
+  margin-top: 5px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 16px;
+  background: #102b53;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #ffc12e;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background:
+    radial-gradient(circle at top right, #286bb1, transparent 45%),
+    linear-gradient(130deg, #07152f, #123e79);
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffc12e;
+  color: #07152f;
+  padding: 7px 17px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: clamp(32px, 6vw, 55px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 17px;
+  color: #dce8ff;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  display: inline-block;
+  background: #ffc12e;
+  color: #07152f;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.main-btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 65px 6%;
+  max-width: 1250px;
+  margin: auto;
+  scroll-margin-top: 75px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading span {
+  color: #c28b12;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  color: #102f60;
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.section-heading p {
+  color: #68758a;
+}
+
+/* PACKAGES */
+
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 22px;
+}
+
+.package-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  border-top: 5px solid #ffc12e;
+  box-shadow: 0 5px 20px rgba(7, 21, 47, .08);
+  transition: .3s;
+}
+
+.package-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(7, 21, 47, .15);
+}
+
+.package-card h3 {
+  color: #123e79;
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.package-card p {
+  color: #788397;
+  font-size: 13px;
+  min-height: 24px;
+}
+
+.package-card h2 {
+  font-size: 34px;
+  color: #07152f;
+  margin: 18px 0;
+}
+
+.package-icon {
+  font-size: 38px;
+}
+
+.package-card button {
+  background: #123e79;
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: .3s;
+}
+
+.package-card button:hover {
+  background: #ffc12e;
+  color: #07152f;
+}
+
+.mtn-card {
+  border-top-color: #ffbf00;
+}
+
+.voda-card {
+  border-top-color: #e31d2b;
+}
+
+.voda-card button {
+  background: #d71920;
+}
+
+/* ESIM COMPATIBILITY GUIDE */
+
+.compatibility {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  border-left: 5px solid #ffc12e;
+  box-shadow: 0 5px 20px rgba(7, 21, 47, .08);
+}
+
+.compatibility h3 {
+  color: #123e79;
+  margin-bottom: 12px;
+}
+
+.compatibility ul {
+  padding-left: 22px;
+  color: #68758a;
+}
+
+.compatibility p {
+  margin-top: 12px;
+  color: #68758a;
+  font-size: 14px;
+}
+
+/* ORDER FORM */
+
+.order-section {
+  max-width: 900px;
+}
+
+.order-section form {
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(7, 21, 47, .08);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0 8px;
+  color: #102f60;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccd5e2;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fff;
+  outline: none;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #1762ae;
+  box-shadow: 0 0 0 3px rgba(23, 98, 174, .1);
+}
+
+.help-text {
+  font-size: 13px;
+  color: #6b778a;
+  margin-top: 9px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* PAYMENT */
+
+.payment-info {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 9px;
+  background: #fff5d9;
+  border-left: 4px solid #ffc12e;
+  color: #544016;
+  font-size: 14px;
+}
+
+/* SUBMIT */
+
+.submit-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 17px;
+  border: none;
+  border-radius: 9px;
+  background: #159447;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  background: #0d6d32;
+}
+
+/* FOOTER */
+
+footer {
+  background: #07152f;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+footer h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 8px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin: 20px 0;
+  background: #20b85a;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  background: #138b40;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #aab8cc;
+  margin-top: 20px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .navbar {
+    gap: 13px;
+    padding: 14px 8px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 380px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .section {
+    padding: 45px 18px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .packages {
+    grid-template-columns: 1fr;
+  }
+
+  .order-section form {
+    padding: 22px 16px;
+  }
+
+}
